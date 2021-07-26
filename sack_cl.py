@@ -25,3 +25,9 @@ class Knapsack:
         for i in self.contents:
             sum += i.give_wgt()
         return sum
+
+    def give_num_of_items(self) -> int:
+        sum = 0
+        for i in self.contents:
+            sum+=1
+        return sum
