@@ -9,6 +9,10 @@ class Knapsack:
         
     def put_in(self, item: Item) -> None:
         self.contents.append(item)
+
+    def remove(self, id: str) -> None:
+        for item in self.contents:
+            if item.give_id() == id: self.contents.remove(item)
     
     def give_contents(self) -> None:
         for i in self.contents:
